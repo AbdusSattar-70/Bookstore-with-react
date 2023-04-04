@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Categories = () => (
-  <div>
-    <button type="button">Status</button>
+  <div style={{ margin: '5rem 20rem' }}>
+    <button type="button">Check Status</button>
   </div>
 );
 
