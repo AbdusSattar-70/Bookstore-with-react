@@ -137,7 +137,7 @@ To run tests and check errors, run the following command:
 - To check Eslint error:-
 
 ```bash
-  npx exlint .
+  npx eslint "**/*.{js,jsx}"
 ```
 
 # Deployment <a name="triangular_flag_on_post-deployment"></a>
