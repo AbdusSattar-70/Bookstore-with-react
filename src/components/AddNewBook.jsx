@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { v4 as uuid } from 'uuid';
 
-const AddNewBook = (props) => {
-  const [newBook, setNewBook] = useState({ title: '', author: '' });
+import { addBook } from '../redux/features/books/bookSlice';
+
+const AddNewBook = () => {
+  const [newBook, setNewBook] = useState({
+    id: '', title: '', author: '', category: '',
+  });
   const [message, setMessage] = useState('');
-  const { onAddBook } = props;
+  const dispatch = useDispatch();
   const { title, author } = newBook;
 
   const handleChange = (event) => {
@@ -15,8 +20,8 @@ const AddNewBook = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (title.trim()) {
-      onAddBook(newBook);
+    if (title.trim() && author.trim()) {
+      dispatch(addBook({ ...newBook, id: uuid() }));
       setNewBook({ title: '', author: '' });
       setMessage('');
     } else {
@@ -36,10 +41,6 @@ const AddNewBook = (props) => {
       <span>{message}</span>
     </form>
   );
-};
-
-AddNewBook.propTypes = {
-  onAddBook: PropTypes.func.isRequired,
 };
 
 export default AddNewBook;
