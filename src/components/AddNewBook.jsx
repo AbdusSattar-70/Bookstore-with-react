@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuid } from 'uuid';
 
-import { addBook } from '../redux/features/books/bookSlice';
+import { addBook, postBook } from '../redux/features/books/bookSlice';
 
 const AddNewBook = () => {
   const [newBook, setNewBook] = useState({
-    id: '', title: '', author: '', category: '',
+    item_id: '', title: '', author: '', category: '',
   });
   const [message, setMessage] = useState('');
   const dispatch = useDispatch();
@@ -21,7 +21,8 @@ const AddNewBook = () => {
     event.preventDefault();
 
     if (title.trim() && author.trim()) {
-      dispatch(addBook({ ...newBook, id: uuid() }));
+      dispatch(postBook({ ...newBook, item_id: uuid(), category: 'politics' }))
+        .then(() => dispatch(addBook({ ...newBook, item_id: uuid(), category: 'politics' })));
       setNewBook({ title: '', author: '' });
       setMessage('');
     } else {
