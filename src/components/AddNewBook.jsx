@@ -31,12 +31,10 @@ const AddNewBook = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ margin: '4rem 20rem' }}>
+    <form onSubmit={handleSubmit}>
       <h2>ADD NEW BOOK</h2>
       <input onChange={handleChange} type="text" id="title" name="title" value={title} placeholder="Book Title" />
-      {' '}
       <input onChange={handleChange} type="text" id="author" name="author" value={author} placeholder="Author" />
-      {' '}
       <button type="submit">Add Book</button>
       <br />
       <span>{message}</span>

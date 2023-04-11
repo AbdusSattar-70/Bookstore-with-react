@@ -2,10 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
-  <header style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+  <header>
     <h1>Bookstore CMS</h1>
     <nav>
-      <ul style={{ display: 'flex', gap: '2rem' }}>
+      <ul>
         <li>
           <NavLink to="/">
             Books

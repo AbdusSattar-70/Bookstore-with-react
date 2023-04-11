@@ -28,7 +28,7 @@ const Book = () => {
   }
 
   return (
-    <div style={{ margin: '2rem 20rem' }}>
+    <div>
       { books && books.map((book) => (
         <ul key={uuid()}>
           <li>
