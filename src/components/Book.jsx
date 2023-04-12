@@ -33,22 +33,42 @@ const Book = () => {
     <div>
       { books && books.map((book) => (
         <div className="LessonPanel flex" key={uuid()}>
-          <p>
-            {book.title}
-          </p>
-          <p>
-            {book.author}
-          </p>
-          <p>
-            <button
-              onClick={() => dispatch(removeBook(book.item_id))}
-              type="button"
-            >
-              Remove
-            </button>
-          </p>
-          <div className="ProgressOvalDiv">
-            <CircularProgressbar className="ProgressOval" value={25} />
+          <div className="bookCard1">
+            <p className="bookCategory">Science Fiction</p>
+            <p className="Title">
+              {book.title}
+            </p>
+            <p className="commentsEdit">
+              {book.author}
+            </p>
+            <div>
+              <button className="commentsEdit" type="button">Comments</button>
+              <span className="line" />
+              <button
+                className="commentsEdit"
+                onClick={() => dispatch(removeBook(book.item_id))}
+                type="button"
+              >
+                Remove
+              </button>
+              <span className="line" />
+              <button className="commentsEdit" type="button">Edit</button>
+            </div>
+          </div>
+          <div className="bookCard2 flex">
+            <div className="ProgressOvalDiv ">
+              <CircularProgressbar className="ProgressOval" value={25} />
+            </div>
+            <div>
+              <p className="Percent-Complete">25%</p>
+              <p className="Completed">Completed</p>
+            </div>
+          </div>
+          <span className="line2" />
+          <div className="bookCard3">
+            <p className="currentChapter">CURRENT CHAPTER</p>
+            <p className="currentLesson">Chapter 17 </p>
+            <button className="updateButton" type="button">UPDATE PROGRESS</button>
           </div>
         </div>
       ))}

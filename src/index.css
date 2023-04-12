@@ -13,7 +13,8 @@
   --pale-gray: #f5f6fa;
   --black-two: #121212;
   --black-5: rgba(0, 0, 0, 0.05);
-  --medium-blue: #379cf6;
+  --medium-blue: #307bbe;
+  --cool-blue: #4386bf;
   --azure: #0290ff;
   --z: #fafafa;
   --white-two: #fff;
@@ -109,12 +110,134 @@ nav {
 }
 
 .LessonPanel {
+  justify-content: space-between;
+  align-items: center;
   height: 10.625rem;
   margin: 2.313rem 6.25rem 0;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  padding: 2rem 2rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: var(--white-two);
+}
+
+.bookCategory {
+  height: 1.125rem;
+  opacity: 0.5;
+  font-family: var(--font-family-monts);
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--black-two);
+}
+
+.Title {
+  height: 1.813rem;
+  margin: 0.188rem 0;
+  font-family: var(--font-family-robo);
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: var(--black-two);
+}
+
+.currentChapter {
+  width: 7.875rem;
+  height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  font-family: var(--font-family-robo);
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: var(--black-two);
+}
+
+.currentLesson {
+  width: 4.688rem;
+  height: 1.313rem;
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-family: var(--font-family-robo);
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+}
+
+.bookCard1 {
+  width: 30rem;
+}
+
+.bookCard2 {
+  width: 15rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookCard3 {
+  width: 22.5rem;
+}
+
+.checkStatus,
+.updateButton {
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  border: none;
+  font-family: var(--font-family-robo);
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-two);
+  background-color: var(--azure);
+}
+
+.checkStatus {
+  margin: 5rem 30rem;
+}
+
+.line {
+  width: 0.125rem;
+  height: 1.5rem;
+  margin: 0.75rem 1.063rem 0 0.938rem;
+  border: solid 1px #e8e8e8;
+}
+
+.line2 {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 1.125rem 2.5rem 0 2.5rem;
+  border: solid 1px #e8e8e8;
+}
+
+.Percent-Complete {
+  height: 2.438rem;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: var(--font-family-monts);
+  font-size: 2rem;
+  color: var(--black-two);
+}
+
+.Completed {
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: var(--font-family-monts);
+  font-size: 0.875rem;
+  color: var(--black-two);
+}
+
+.commentsEdit {
+  height: 1.188rem;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  font-family: var(--font-family-robo);
+  font-size: 0.875rem;
+  font-weight: 300;
+  border: none;
+  background-color: var(--white-two);
+  color: var(--cool-blue);
+}
+
+button {
+  cursor: pointer;
 }
 
 .addBookForm {

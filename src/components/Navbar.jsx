@@ -8,10 +8,10 @@ const Navbar = () => (
       <ul className="flex navUL">
         <li className="Bookstore-CMS">Bookstore CMS</li>
         <li>
-          <NavLink className="BOOKS" to="/">Books</NavLink>
+          <NavLink className="BOOKS" to="/">BOOKS</NavLink>
         </li>
         <li>
-          <NavLink className="CATEGORIES" to="/categories">Categories</NavLink>
+          <NavLink className="CATEGORIES" to="/categories">CATEGORIES</NavLink>
         </li>
       </ul>
       <div className="profile">

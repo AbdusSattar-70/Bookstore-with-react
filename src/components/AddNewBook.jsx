@@ -36,7 +36,7 @@ const AddNewBook = () => {
       <div className="flex addBookInput">
         <input className="inputTitle" onChange={handleChange} type="text" id="title" name="title" value={title} placeholder="Book Title" />
         <input className="inputAuthor" onChange={handleChange} type="text" id="author" name="author" value={author} placeholder="Author" />
-        <button className="addButton" type="submit">Add Book</button>
+        <button className="addButton" type="submit">ADD BOOK</button>
       </div>
       <br />
       <span>{message}</span>
