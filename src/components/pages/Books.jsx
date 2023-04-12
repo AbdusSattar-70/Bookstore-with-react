@@ -6,9 +6,9 @@ import BookList from '../BookList';
 import AddNewBook from '../AddNewBook';
 
 const Books = () => (
-  <main>
+  <section>
     <BookList />
     <AddNewBook />
-  </main>
+  </section>
 );
 export default Books;

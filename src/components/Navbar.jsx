@@ -1,22 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa';
 
 const Navbar = () => (
-  <header style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-    <h1>Bookstore CMS</h1>
-    <nav>
-      <ul style={{ display: 'flex', gap: '2rem' }}>
+  <header className="navMainContainer">
+    <nav className="flex">
+      <ul className="flex navUL">
+        <li className="Bookstore-CMS">Bookstore CMS</li>
         <li>
-          <NavLink to="/">
-            Books
-          </NavLink>
+          <NavLink className="BOOKS" to="/">BOOKS</NavLink>
         </li>
         <li>
-          <NavLink to="/categories">
-            Categories
-          </NavLink>
+          <NavLink className="CATEGORIES" to="/categories">CATEGORIES</NavLink>
         </li>
       </ul>
+      <div className="profile">
+        <FaUser className="profileMask" />
+      </div>
     </nav>
   </header>
 );
