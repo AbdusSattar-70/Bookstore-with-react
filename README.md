@@ -7,7 +7,7 @@
 
 <div align="center">
 <h3><b>Screenshot</b></h3>
-It will add when project completed
+<img src="src/assets/s1.png" alt="screenshoot" width="400"  height="auto"/>
 
 </div>
 
@@ -40,7 +40,7 @@ It will add when project completed
 
 **Bookstore-with-react** is the project of the Bookstore CMS application with React </b>
 
-<h5> I set up the environment and tools needed to develop a React application. In this project, I will make a simple SPA that contains two subpages - Books and Categories.</h5>
+<h5> I set up the environment and tools needed to develop a React Redux application. In this project, I have made a simple SPA that contains two subpages - Books and Categories.</h5>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -54,19 +54,20 @@ It will add when project completed
     <li>CSS</li>
     <li>JS</li>
     <li>React</li>
+    <li>Redux</li>
   </ul>
 </details>
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href=#>Server - It will be Hosted on Render</a></li>
+    <li><a href=#>Server - It is Hosted on GitHubr</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href=#>It Only works on Local server right now</a></li>
+    <li><a href=#> used the [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739) as your backend.</a></li>
   </ul>
 </details>
 
@@ -74,7 +75,9 @@ It will add when project completed
 
 ## Key Features <a name="key-features"></a>
 
-No features are added right now.
+- Anyone can add book with author name
+- That will hosted on Bookstore API server
+- And also can delete from the list.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +85,7 @@ No features are added right now.
 
 ## 🚀 Live Demo<a name="live-demo"></a>
 
-- [Live Demo Link](It will add when project is completed)
+- [Live Demo Link](https://abdussattar-70.github.io/Bookstore-with-react/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,7 +99,7 @@ To get a local copy up and running, follow these steps.
 
 - In order to run this project you need:
 
-### It would be best if you had some familiarity with `JS`, `CSS`, and `React` .
+### It would be best if you had some familiarity with `JS`, `CSS`,`React` and `Redux` .
 
 - A Computer (MAC or PC)
 - code editor (VSCode,Atom etc...)
