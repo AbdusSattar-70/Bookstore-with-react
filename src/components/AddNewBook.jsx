@@ -31,11 +31,13 @@ const AddNewBook = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>ADD NEW BOOK</h2>
-      <input onChange={handleChange} type="text" id="title" name="title" value={title} placeholder="Book Title" />
-      <input onChange={handleChange} type="text" id="author" name="author" value={author} placeholder="Author" />
-      <button type="submit">Add Book</button>
+    <form className="addBookForm" onSubmit={handleSubmit}>
+      <h2 className="addBookTitle">ADD NEW BOOK</h2>
+      <div className="flex addBookInput">
+        <input className="inputTitle" onChange={handleChange} type="text" id="title" name="title" value={title} placeholder="Book Title" />
+        <input className="inputAuthor" onChange={handleChange} type="text" id="author" name="author" value={author} placeholder="Author" />
+        <button className="addButton" type="submit">Add Book</button>
+      </div>
       <br />
       <span>{message}</span>
     </form>

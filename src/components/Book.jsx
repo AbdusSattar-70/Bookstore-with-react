@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { v4 as uuid } from 'uuid';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 import { removeBook, fetchBooks } from '../redux/features/books/bookSlice';
 
@@ -30,22 +32,25 @@ const Book = () => {
   return (
     <div>
       { books && books.map((book) => (
-        <ul key={uuid()}>
-          <li>
+        <div className="LessonPanel flex" key={uuid()}>
+          <p>
             {book.title}
-          </li>
-          <li>
+          </p>
+          <p>
             {book.author}
-          </li>
-          <li>
+          </p>
+          <p>
             <button
               onClick={() => dispatch(removeBook(book.item_id))}
               type="button"
             >
               Remove
             </button>
-          </li>
-        </ul>
+          </p>
+          <div className="ProgressOvalDiv">
+            <CircularProgressbar className="ProgressOval" value={25} />
+          </div>
+        </div>
       ))}
     </div>
   );
